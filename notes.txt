@@ -1,0 +1,7 @@
+
+Keycloak User profile access:
+http://localhost:8080/auth/realms/my-realm/account
+
+
+Start Keycloack with docker:
+docker run --name keycloak-spring -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:12.0.1
