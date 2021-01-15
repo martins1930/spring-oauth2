@@ -22,7 +22,7 @@
     </properties>
 
     <modules>
-        <module>spring-oauth2-resource-server</module>
+        <module>resource-server</module>
         <module>gateway</module>
     </modules>
 
