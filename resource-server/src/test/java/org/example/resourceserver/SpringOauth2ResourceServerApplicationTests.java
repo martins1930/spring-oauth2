@@ -1,4 +1,4 @@
-package org.example.springoauth2resourceserver;
+package org.example.resourceserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

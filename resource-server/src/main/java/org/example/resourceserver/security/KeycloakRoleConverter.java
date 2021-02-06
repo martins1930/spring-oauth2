@@ -1,4 +1,4 @@
-package org.example.springoauth2resourceserver.security;
+package org.example.resourceserver.security;
 
 import java.util.Collection;
 import java.util.Collections;

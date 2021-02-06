@@ -1,6 +1,5 @@
-package org.example.springoauth2resourceserver.security;
+package org.example.photos.security;
 
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -19,16 +18,11 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 
     http
         .authorizeRequests()
-        .antMatchers(HttpMethod.GET, "/users/status/check")
-        //.hasAuthority("SCOPE_profile")
-        .hasRole("developer")
         .anyRequest().authenticated()
         .and()
         .oauth2ResourceServer()
         .jwt()
         .jwtAuthenticationConverter(jwtAuthenticationConverter);
-
   }
-
 
 }

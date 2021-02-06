@@ -10,9 +10,9 @@
 	</parent>
 
 
-	<artifactId>resource-server</artifactId>
+	<artifactId>albums</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>resource-server</name>
+	<name>albums</name>
 
 	<dependencies>
 		<dependency>

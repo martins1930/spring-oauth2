@@ -1,4 +1,4 @@
-package org.example.springoauth2resourceserver.controller;
+package org.example.photos.controller;
 
 import java.util.Collections;
 import java.util.Map;

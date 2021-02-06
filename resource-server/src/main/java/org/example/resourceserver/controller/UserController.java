@@ -1,6 +1,7 @@
-package org.example.springoauth2resourceserver.controller;
+package org.example.resourceserver.controller;
 
-import org.springframework.security.access.annotation.Secured;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
@@ -14,9 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/users")
 public class UserController {
 
+  private final Environment env;
+
+  @Autowired
+  public UserController(Environment env) {
+    this.env = env;
+  }
+
   @GetMapping("/status/check")
   public String status() {
-    return "working..";
+    return "working on port " + env.getProperty("local.server.port");
   }
 
 
